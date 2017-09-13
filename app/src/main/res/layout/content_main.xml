@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/firstNametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/lastNametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/firstNametxt"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/firstNamelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lastNametxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="First Name" />
+
+    <TextView
+        android:id="@+id/lastNamelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_alignBottom="@+id/lastNametxt"
+        android:layout_alignRight="@+id/firstNamelbl"
+        android:layout_alignEnd="@+id/firstNamelbl" />
+
+    <TextView
+        android:id="@+id/toclbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lastNamelbl"
+        android:layout_alignRight="@+id/lastNamelbl"
+        android:layout_below="@+id/lastNamelbl"
+        android:layout_marginTop="30dp"
+        android:text="Type of Chocolate"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/ddBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastNametxt"
+        android:layout_alignStart="@+id/lastNametxt"
+        android:layout_alignTop="@+id/toclbl"
+        android:entries="@array/bar_flavors"
+
+        />
+
+    <TextView
+        android:id="@+id/noblbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/toclbl"
+        android:layout_alignRight="@+id/toclbl"
+        android:layout_below="@+id/toclbl"
+        android:layout_marginTop="29dp"
+        android:text="Number of Bars" />
+
+    <EditText
+        android:id="@+id/nobtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/noblbl"
+        android:layout_alignBottom="@+id/noblbl"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/shipmentTypelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/noblbl"
+        android:layout_marginTop="30dp"
+        android:text="Shipment Type" />
+
+    <RadioButton
+        android:id="@+id/nsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastNamelbl"
+        android:layout_alignStart="@+id/lastNamelbl"
+        android:layout_below="@+id/shipmentTypelbl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Normal Shipment" />
+
+    <RadioButton
+        android:id="@+id/expbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expidited"
+        android:layout_below="@+id/nsbtn"
+        android:layout_alignLeft="@+id/nsbtn"
+        android:layout_alignStart="@+id/nsbtn" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Save"
+        android:layout_below="@+id/expbtn"
+        android:layout_alignLeft="@+id/expbtn"
+        android:layout_alignStart="@+id/expbtn" />
+
+    <TextView
+        android:id="@+id/ansertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/savebtn"
+        android:layout_alignStart="@+id/savebtn"
+        android:layout_below="@+id/savebtn"
+        android:layout_marginTop="9dp"
+        android:text="Order Results" />
+</RelativeLayout>
