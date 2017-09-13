@@ -1,7 +1,8 @@
 # OrderEntrySystem1-Android
 Part 1 <b>
 Order Entry System In Android <b>
-Create a candy order taking system in Android.  Create an order class that will have the following properties: <b>
+Create a candy order taking system in Android. <b>
+Create an order class that will have the following properties: <b>
 •	The first name of the buyer <b>
 •	The last name of the buyer <b>
 •	A string representing the type of chocolate <b>
