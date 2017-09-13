@@ -1,5 +1,5 @@
 # OrderEntrySystem1-Android
-Part 1  Lab 1<br>
+Part 1  Lab1<br>
 Order Entry System In Android <br>
 Create a candy order taking system in Android. <br>
 Create an order class that will have the following properties: <br>
